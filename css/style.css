@@ -1,76 +1,134 @@
-:root{
+:root {
   --main-red: rgb(220, 65, 65);
 }
+
 @font-face {
   font-family: "OpenSansItalic";
   src: url(../fonts/openSans-light.ttf);
 }
+
 @font-face {
   font-family: "OpenSansReg";
   src: url(../fonts/openSans-reg.ttf);
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   font-family: "OpenSansReg";
 }
-.header{
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 2em;
 }
-.logo__img{
+
+.logo__img {
   height: 40px;
 }
-.menu{
+
+.menu {
   display: none;
 }
-.lista__li{
+
+.lista__li {
   display: inline-block;
   margin-left: 1em;
 }
-.lista__a{
+
+.lista__a {
   text-decoration: none;
   padding: 0.5em;
   padding-bottom: 0;
   color: black;
 }
-.lista__a:hover{
+
+.lista__a:hover {
   border-bottom: 2px solid black;
 }
-.lista__a--iniciar{
+
+.lista__a--iniciar {
   background: rgb(246, 133, 60);
   background: linear-gradient(90deg, rgba(246, 133, 60, 1) 1%, rgba(243, 101, 55, 1) 39%, rgba(240, 75, 51, 1) 93%);
   padding: 0.5em;
   border-radius: 2em;
   color: white;
 }
-.lista__a--iniciar:hover{
+
+.lista__a--iniciar:hover {
   border: none;
   background: rgb(246, 133, 60);
-    background: linear-gradient(90deg, rgb(205, 112, 51) 1%, rgb(205, 92, 55) 39%, rgb(217, 77, 55) 93%);
+  background: linear-gradient(90deg, rgb(205, 112, 51) 1%, rgb(205, 92, 55) 39%, rgb(217, 77, 55) 93%);
 }
-.lista__a--registrar{
+
+.lista__a--registrar {
   background-color: rgb(231, 231, 231);
   padding: 0.5em;
   border-radius: 2em;
   color: black;
 }
-.lista__a--registrar:hover{
+
+.lista__a--registrar:hover {
   border: none;
   background-color: rgb(201, 201, 201);
 }
+
 @media (max-width: 800px) {
-  *{
-  }
-  .lista{
+  * {}
+
+  .lista {
     display: none;
   }
-  .menu{
+
+  .menu {
     display: block;
   }
-  .menu__img{
+
+  .menu__img {
     height: 25px;
   }
+}
+
+.imagx {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.imagen {
+  width: 100%;
+  height: 615px;
+  background-image: url(../img/lenguajes_1.jpg);
+  background-size: cover;
+}
+
+.ledre {
+  top: 151px;
+  left: 265px;
+  width: 100%;
+  margin: 194px;
+  position: relative;
+  color: #af3434;
+  font-size: 3em;
+}
+
+#boton1 {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: orangered;
+  padding: 3mm;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#boton1:hover {
+  background-color: #af3434;
 }
