@@ -24,8 +24,11 @@
   height: 40px;
 }
 .menu{
+  
   display: none;
 }
+.lista
+
 .lista__li{
   display: inline-block;
   margin-left: 1em;
@@ -49,7 +52,7 @@
 .lista__a--iniciar:hover{
   border: none;
   background: rgb(246, 133, 60);
-    background: linear-gradient(90deg, rgb(205, 112, 51) 1%, rgb(205, 92, 55) 39%, rgb(217, 77, 55) 93%);
+  background: linear-gradient(90deg, rgb(205, 112, 51) 1%, rgb(205, 92, 55) 39%, rgb(217, 77, 55) 93%);
 }
 .lista__a--registrar{
   background-color: rgb(231, 231, 231);
@@ -61,6 +64,12 @@
   border: none;
   background-color: rgb(201, 201, 201);
 }
+.listaDesplegable{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 @media (max-width: 800px) {
   .lista{
     display: none;
@@ -70,5 +79,23 @@
   }
   .menu__img{
     height: 25px;
+  }
+  .lista__li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+  .lista__li--desplegable{
+    margin: 0.5em;
+  }
+  .xElement{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .xElement__img{
+    height: 25px;
+  }
+  .desaparecerListaDesplegable{
+    display: none;
   }
 }
