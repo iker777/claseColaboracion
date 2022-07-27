@@ -1,0 +1,76 @@
+:root{
+  --main-red: rgb(220, 65, 65);
+}
+@font-face {
+  font-family: "OpenSansItalic";
+  src: url(../fonts/openSans-light.ttf);
+}
+@font-face {
+  font-family: "OpenSansReg";
+  src: url(../fonts/openSans-reg.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSansReg";
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em;
+}
+.logo__img{
+  height: 40px;
+}
+.menu{
+  display: none;
+}
+.lista__li{
+  display: inline-block;
+  margin-left: 1em;
+}
+.lista__a{
+  text-decoration: none;
+  padding: 0.5em;
+  padding-bottom: 0;
+  color: black;
+}
+.lista__a:hover{
+  border-bottom: 2px solid black;
+}
+.lista__a--iniciar{
+  background: rgb(246, 133, 60);
+  background: linear-gradient(90deg, rgba(246, 133, 60, 1) 1%, rgba(243, 101, 55, 1) 39%, rgba(240, 75, 51, 1) 93%);
+  padding: 0.5em;
+  border-radius: 2em;
+  color: white;
+}
+.lista__a--iniciar:hover{
+  border: none;
+  background: rgb(246, 133, 60);
+    background: linear-gradient(90deg, rgb(205, 112, 51) 1%, rgb(205, 92, 55) 39%, rgb(217, 77, 55) 93%);
+}
+.lista__a--registrar{
+  background-color: rgb(231, 231, 231);
+  padding: 0.5em;
+  border-radius: 2em;
+  color: black;
+}
+.lista__a--registrar:hover{
+  border: none;
+  background-color: rgb(201, 201, 201);
+}
+@media (max-width: 800px) {
+  *{
+  }
+  .lista{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+  .menu__img{
+    height: 25px;
+  }
+}
