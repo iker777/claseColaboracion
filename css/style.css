@@ -61,6 +61,45 @@
   border: none;
   background-color: rgb(201, 201, 201);
 }
+
+/****************** Estilos section **************************/
+
+.dago{
+  display: flex;
+  justify-content: space-between;
+}
+.dago__article{
+  width: 33%;
+  background-color: rgb(248, 220, 201);
+  border-radius: 30px;
+  margin: 0 1em 0 1em;
+}
+.titulo__article{
+  text-align: center;
+  padding: 1em;
+}
+.parrafo__articcle{
+  padding: 1em;
+}
+.article__img{
+  width: 300px;
+  border-radius: 25px;
+  padding: 1em;
+}
+/****************** Estilos section **************************/
+
+/****************** Estilos footer **************************/
+
+.footer{
+  padding: 1em;
+  text-align: center;
+}
+.footer__span{
+  padding: 1em;
+  font-style: italic;
+}
+/****************** Estilos footer **************************/
+
 @media (max-width: 800px) {
   *{
   }
